@@ -109,6 +109,49 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* footer map starts */
+.map {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5em;
+  color: white;
+}
+
+.box {
+  padding: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  max-width: 700px;
+}
+
+h1 {
+  padding: 2%;
+  font-size: 2em;
+}
+
+p {
+  font-size: 1.2em
+}
+
+.hover1 {
+  border-radius: 2em;
+  border: none;
+  width: 300px;
+  height: 300px;
+  transition: 0.3s ease-in-out;
+}
+
+.hover1:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+/* footer map ends */
+
+
 /* whats next for laabh starts here */
 
 .container {
@@ -966,10 +1009,7 @@ p {
 }
 
 
-.custom-padded {
-  padding: 0px 120px 0px 120px;
-  /* top, right, bottom, left */
-}
+
 
 .custom-padding {
   padding: 0px 55px 0px 55px;
