@@ -86,10 +86,10 @@ body {
   align-items: center;
   /* align-items: flex-start; */
   padding: 32px 16px;
-  /* font-family: 'Poppins', sans-serif; */
+  font-family: 'Poppins', sans-serif;
   /* font-family: 'Roboto Mono', monospace, 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
-  font-family: "Roboto Mono", monospace;
+  /* font-family: "Roboto Mono", monospace; */
   font-weight: 1000;
   position: relative;
   justify-content: center;
@@ -123,7 +123,7 @@ body {
 
 .base-container {
   height: 250px;
-  background: #2e8578;
+  background: #2e6057;
   border-radius: 16px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   display: flex;
@@ -240,7 +240,7 @@ body {
 
 
 /* WHAT MAKES US UNIQUE 2 starta */
-.main-container {
+.main-containers {
   display: flex;
   width: 100%;
   max-width: 1400px;
@@ -312,7 +312,7 @@ video.video-player {
 
 /* Content Cards */
 .content-panel {
-  width: 400px;
+  width: 350px;
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -580,8 +580,8 @@ p {
 
 
 
-/* minds behind laabh starts */
 
+/* minds behind laabh starts */
 .title h4 {
   display: inline-block;
   padding: 20px;
@@ -921,7 +921,7 @@ p {
 .gradient-text {
   font-size: 50px;
   font-weight: bold;
-  background: linear-gradient(45deg, rgb(255, 255, 255), #ffffff);
+  background: linear-gradient(45deg, rgb(255, 255, 255), #17A49B);
   /* Lighter cyan */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -952,7 +952,7 @@ p {
 .container1 {
   display: flex;
   flex-wrap: wrap;
-  border: 1px solid rgb(130, 130, 130);
+  border: 1px solid #17A49C;
   gap: 30px;
   max-width: 1200px;
 }
