@@ -108,6 +108,22 @@ body {
 }
 
 
+
+/* add ons starts */
+.container_add-ons {
+
+  align-items: center;
+  padding: 20px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  background: #111828;
+  border: #fff;
+  border-radius: 8px #fff;
+  /* background: linear-gradient(45deg, rgb(26, 26, 26), #373636 100%); */
+}
+
+/* add ons ends */
+
 /* live events and trading community starts */
 .container-grid {
   display: grid;
@@ -251,6 +267,7 @@ body {
   min-height: 500px;
   border-radius: 15px;
   background: #1e293b;
+  border: #4a827b;
   overflow: hidden;
   position: relative;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
@@ -516,7 +533,7 @@ p {
 
 .gallery-content h2 {
   font-size: 1.3rem;
-  color: #fff;
+  color: #75E8D9;
   margin-bottom: 10px;
 }
 
