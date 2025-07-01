@@ -1,8 +1,12 @@
 const swiper = new Swiper('.slider-wrapper', {
-
     loop: true,
     grabCursor: true,
     spacebetween: 30,
+
+    autoplay: {
+        delay: 2800,
+        disableOnInteraction: false,
+    },
 
     // If we need pagination
     pagination: {
