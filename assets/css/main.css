@@ -560,7 +560,6 @@ video.video-player {
   display: flex;
   align-items: center;
   justify-content: center;
-
   max-width: 700px;
 }
 
@@ -590,7 +589,6 @@ p {
 
 
 /* whats next for laabh starts here */
-
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -957,7 +955,7 @@ p {
   padding: 35px;
   flex-direction: column;
   display: flex;
-  
+
   align-items: center;
   justify-content: center;
   border-radius: 8px;
@@ -980,7 +978,7 @@ p {
   font-size: 1.15rem;
   color: #e3e3e3;
   font-weight: 500;
-  
+
   margin: 14px 0 40px;
 }
 
@@ -1033,6 +1031,61 @@ p {
 
 /* what we teach ends here */
 
+
+
+/* carousal in blogs starts */
+
+.events {
+  display: flex;
+  align-items: center;
+}
+
+
+.carousel-wrapper {
+  width: 100%;
+  overflow: hidden;
+  /* background: #222; */
+  padding: 40px 0;
+}
+
+.carousel-track {
+  display: flex;
+  width: fit-content;
+  animation: scroll 20s linear infinite;
+}
+
+.carousel-container {
+  width: 180px;
+  height: 190px;
+  margin-right: 20px;
+  background-color: #2c302d;
+  color: white;
+  text-align: center;
+  position: relative;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.container-text {
+  position: absolute;
+  left: 0;
+  right: 0;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/* Scrolling animation */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* carousal in blogs ends */
 
 
 
@@ -1156,8 +1209,18 @@ p {
 
 /* our story us ends */
 
-
-
+/* who we are */
+.aboutus {
+  background-image: url('assets/img/bg/advantages_bg.png');
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
 
 
 .container-wrapper {
@@ -5115,7 +5178,7 @@ h6 {
 
 @media (max-width: 991px) {
   .ico-header .header__main-wrap {
-    padding: 12px 0px;
+    padding: 8px 0px;
   }
 }
 
@@ -5126,8 +5189,9 @@ h6 {
 }
 
 .blockchain-header {
-  background-color: #0B0E13;
-  box-shadow: 0px 8px 77px 0px rgba(0, 0, 0, 0.71);
+  background-color: #1e1e1e;
+  /* background: linear-gradient(20deg, #45ACAB, #0e0430); */
+  box-shadow: 0px 8px 77px 0px rgba(37, 37, 37, 0.71);
 }
 
 .blockchain-header .stricked-menu {
