@@ -85,16 +85,16 @@ body {
   align-items: center;
   padding: 0px 0px;
   /* padding: 32px 16px; */
-  font-family: 'Poppins', sans-serif;
+  /* font-family: 'Poppins', sans-serif; */
   font-weight: 1000;
   position: relative;
   justify-content: center;
   font-family: var(--font-body);
-  font-size: 16px;
+  font-size: 18px;
   line-height: 30px;
   color: var(--color-default);
   background-color: #fff;
-  /* background-color: #0B0B29; */
+  background-color: #0B0B29;
   overflow-x: hidden;
   min-height: 100vh;
   display: flex;
@@ -105,20 +105,36 @@ body {
 }
 
 
-.bingo {
+/* .roboto-mono {
   font-family: "Roboto Mono", monospace;
   font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
+  letter-spacing: 2px;
+  font-weight: 600;
+  font-style: inherit;
+} */
 
-.font {
+/* .roboto-mono {
   font-family: "Roboto Mono", monospace;
   font-optical-sizing: auto;
   font-weight: 600;
   font-style: normal;
+} */
+.roboto-mono {
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  line-height: 30px;
+  font-style: normal;
 }
 
+/* paragrapgh */
+.roboto-mono-paragraph {
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  line-height: 30px;
+  font-style: normal;
+}
 
 
 /* blogs starts here */
@@ -865,7 +881,7 @@ p {
 .containers:hover {
   transform: translateY(-3px);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  background: linear-gradient(135deg, #4a827b 60%, #538A9F 98%);
+  background: linear-gradient(135deg, #15245a 50%, #53739f 98%);
 }
 
 .content h3 {
@@ -1038,6 +1054,7 @@ p {
 .events {
   display: flex;
   align-items: center;
+  margin-right: 20px
 }
 
 
@@ -1045,6 +1062,7 @@ p {
   width: 100%;
   overflow: hidden;
   /* background: #222; */
+  margin-left: 5%;
   padding: 40px 0;
 }
 
@@ -1087,10 +1105,36 @@ p {
 
 /* carousal in blogs ends */
 
+/* frontpage animation starts */
 
+.animate-container {
+  text-align: center;
+}
 
+.animated-image {
+  width: 200px;
+  height: auto;
+  animation: floatAnimation 2s ease-in-out infinite;
+  filter: drop-shadow(0 10px 5px rgba(0, 0, 0, 0.2));
+}
 
+@keyframes floatAnimation {
 
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-30px);
+  }
+}
+
+/* .controls {
+  margin-top: 30px;
+} */
+
+/* frontpage animation ends */
 
 
 
@@ -1099,7 +1143,7 @@ p {
 .gradient-text {
   font-size: 50px;
   font-weight: bold;
-  background: linear-gradient(45deg, rgb(255, 255, 255), #17A49B);
+  background: linear-gradient(20deg, #17A49B, #fff);
   /* Lighter cyan */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1211,11 +1255,12 @@ p {
 
 /* who we are */
 .aboutus {
-  background-image: url('assets/img/bg/advantages_bg.png');
+  /* background-image: url('assets/img/bg/advantages_bg.png'); */
+  background-color: white;
   background-size: cover;
   background-position: center;
   height: 400px;
-  color: white;
+  /* color: white; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1239,7 +1284,7 @@ p {
   /* background: #4B608B; */
   /* gray-50 */
   border-radius: 12px;
-  border: 1px solid #75E8D9;
+  border: 1px solid #15245a;
   /* rgb(130, 130, 130); */
   /* Border color */
   padding: 24px;
@@ -1266,7 +1311,7 @@ p {
 }
 
 .right-container {
-  background: #1c1c1c;
+  /* background: #131313; */
   /* gray-100 */
   border-radius: 12px;
   padding: 24px;
@@ -5188,14 +5233,16 @@ h6 {
   }
 }
 
+/* main navbar in website */
 .blockchain-header {
-  background-color: #1e1e1e;
-  /* background: linear-gradient(20deg, #45ACAB, #0e0430); */
+  /* background-color: #ffffff; */
+  background: linear-gradient(20deg, #45ACAB, #0e0430);
   box-shadow: 0px 8px 77px 0px rgba(37, 37, 37, 0.71);
 }
 
 .blockchain-header .stricked-menu {
-  background-color: #0B0E13;
+  background: linear-gradient(20deg, #45ACAB, #0e0430);
+  /* background-color: #ffffff; */
 }
 
 .blockchain-header .header__main-wrap {
@@ -5433,6 +5480,8 @@ h6 {
   border: 2px solid rgba(150, 144, 162, 0.09);
   padding: 15px;
 }
+
+
 
 /* Navigation css */
 .main-menu {
@@ -9302,7 +9351,7 @@ body .mfp-wrap .mfp-container .mfp-content .mfp-close:hover::after {
 
 .ico-contact__wrap {
   background-color: #1D1D3E;
-  padding: 94px 204px 60px;
+  padding: 30px 24px 50px;
   border-radius: 20px;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
