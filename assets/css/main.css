@@ -136,6 +136,9 @@ body {
   font-style: normal;
 }
 
+.custom-padded {
+  padding: 20px;
+}
 
 /* blogs starts here */
 
