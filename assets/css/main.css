@@ -150,6 +150,7 @@ body {
   width: 100%;
   max-width: 1800px;
   text-align: center;
+  align-items: center;
   margin: 0 auto;
   padding: 2rem;
   border-radius: 1rem;
