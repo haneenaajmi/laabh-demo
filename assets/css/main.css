@@ -89,6 +89,8 @@ body {
   font-weight: 1000;
   position: relative;
   justify-content: center;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+
   font-family: var(--font-body);
   font-size: 18px;
   line-height: 30px;
@@ -113,19 +115,22 @@ body {
   font-style: inherit;
 } */
 
-/* .roboto-mono {
+.roboto-mono {
   font-family: "Roboto Mono", monospace;
   font-optical-sizing: auto;
-  font-weight: 600;
+  font-weight: 400;
+  letter-spacing: 1px;
+  line-height: 20px;
   font-style: normal;
-} */
-.roboto-mono {
+}
+
+/* .roboto-mono {
   font-family: "Roboto Mono", monospace;
   font-optical-sizing: auto;
   font-weight: 600;
   line-height: 30px;
   font-style: normal;
-}
+} */
 
 /* paragrapgh */
 .roboto-mono-paragraph {
@@ -138,6 +143,57 @@ body {
 
 .custom-padded {
   padding: 20px;
+}
+
+/* sub headings starts */
+.heading-container {
+  width: 100%;
+  max-width: 1800px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px -1px rgba(78, 78, 78, 0.1), 0 2px 4px -1px rgba(177, 177, 177, 0.06);
+}
+
+.responsive-heading {
+  font-size: clamp(2rem, 5vw, 4rem);
+  font-weight: 800;
+  line-height: 1.2;
+  background: linear-gradient(45deg, #45ACAB, #FFF);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  margin-bottom: 0.4rem;
+  transition: all 0.3s ease;
+}
+
+.responsive-heading:hover {
+  transform: scale(1.02);
+}
+
+.subheading {
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  color: #fff;
+  max-width: 1000rem;
+  margin: 0 auto;
+  opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+  .heading-container {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 1rem;
+  }
+
+  .heading-container {
+    padding: 1rem;
+  }
 }
 
 /* blogs starts here */
@@ -1166,7 +1222,7 @@ p {
 }
 
 
-/* css for our story starts */
+/* our story starts */
 .container {
   display: flex;
   flex-wrap: wrap;
@@ -1256,6 +1312,43 @@ p {
 
 /* our story us ends */
 
+/* our story container starts */
+.container-card {
+  transition: all 0.5s ease;
+  transform: translateY(30px);
+  opacity: 0;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  margin: 0.5px;
+  animation: fadeInUp 0.5s ease forwards;
+}
+
+.container-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.svg-icon {
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+  flex-shrink: 0;
+}
+
+/* our story containers ends */
+
+
 /* who we are */
 .aboutus {
   /* background-image: url('assets/img/bg/advantages_bg.png'); */
@@ -1287,7 +1380,7 @@ p {
   /* background: #4B608B; */
   /* gray-50 */
   border-radius: 12px;
-  border: 1px solid #15245a;
+  border: 2px solid #213787;
   /* rgb(130, 130, 130); */
   /* Border color */
   padding: 24px;
