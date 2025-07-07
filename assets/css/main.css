@@ -40,9 +40,9 @@
     
 
 -----------------------------------------------------------------------------------*/
-/* @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Titillium+Web:wght@400;600;700&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Titillium+Web:wght@400;600;700&display=swap");
 /* fonts import */
-/* @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 
 :root {
   --font-body: 'Outfit', sans-serif;
@@ -76,7 +76,7 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Roboto Mono", monospace;
+  /* font-family: "Roboto Mono", monospace; */
 }
 
 
@@ -89,8 +89,6 @@ body {
   font-weight: 600;
   position: relative;
   justify-content: center;
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-
   font-family: var(--font-body);
   font-size: 18px;
   line-height: 30px;
@@ -103,43 +101,33 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   box-sizing: border-box;
-  /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
 }
 
-
-/* .roboto-mono {
+.roboto-mono-main-heading {
   font-family: "Roboto Mono", monospace;
   font-optical-sizing: auto;
-  letter-spacing: 2px;
-  font-weight: 600;
-  font-style: inherit;
-} */
-
-.roboto-mono {
-  font-family: "Roboto Mono", monospace;
-  font-optical-sizing: auto;
-  font-weight: 400;
+  font-weight: 700;
+  font-style: normal;
+}
+.font {
+  font-size: 2.11rem;
+  color: #e3e3e3;
   letter-spacing: 1px;
-  line-height: 20px;
-  font-style: normal;
+  font-weight: 500;
 }
 
-/* .roboto-mono {
-  font-family: "Roboto Mono", monospace;
-  font-optical-sizing: auto;
-  font-weight: 600;
-  line-height: 30px;
-  font-style: normal;
-} */
-
-/* paragrapgh */
-.roboto-mono-paragraph {
-  font-family: "Roboto Mono", monospace;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  line-height: 30px;
-  font-style: normal;
+.sub_font {
+  /* font-size: clamp(1rem, 2vw, 1.5rem); */
+  max-width: 1000rem;
+  /* margin: 0 auto; */
+  opacity: 0.9;
+  font-size: 1.15rem;
+  color: #e3e3e3;
+  letter-spacing: 1px;
+  font-weight: 500;
 }
+
+
 
 .custom-padded {
   padding: 20px;
@@ -163,7 +151,6 @@ body {
   line-height: 32px !important;
   text-align: center !important;
   vertical-align: middle !important;
-  /* @mixin sf-pro-display-font; */
   font-family: -apple-system, BlinkMacSystemFont, 'Trebuchet MS', Roboto, Ubuntu, sans-serif !important;
   color: #B2B5BE !important;
 }
@@ -263,7 +250,6 @@ body {
   margin-bottom: 15px;
   font-size: 1.5rem;
   border-bottom: 2px solid #45ACAB;
-  ;
   padding-bottom: 10px;
 }
 
@@ -275,7 +261,6 @@ body {
 
 .blog_btn {
   background-color: #45ACAB;
-  ;
   color: white;
   border: none;
   padding: 10px 20px;
