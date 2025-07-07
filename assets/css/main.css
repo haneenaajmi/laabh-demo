@@ -40,9 +40,9 @@
     
 
 -----------------------------------------------------------------------------------*/
-@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Titillium+Web:wght@400;600;700&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Titillium+Web:wght@400;600;700&display=swap"); */
 /* fonts import */
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap'); */
 
 :root {
   --font-body: 'Outfit', sans-serif;
@@ -86,7 +86,7 @@ body {
   padding: 0px 0px;
   /* padding: 32px 16px; */
   /* font-family: 'Poppins', sans-serif; */
-  font-weight: 1000;
+  font-weight: 600;
   position: relative;
   justify-content: center;
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
@@ -157,11 +157,49 @@ body {
   box-shadow: 0 4px 6px -1px rgba(78, 78, 78, 0.1), 0 2px 4px -1px rgba(177, 177, 177, 0.06);
 }
 
+/* trading chart starts */
+.tradingview-widget-copyright {
+  font-size: 13px !important;
+  line-height: 32px !important;
+  text-align: center !important;
+  vertical-align: middle !important;
+  /* @mixin sf-pro-display-font; */
+  font-family: -apple-system, BlinkMacSystemFont, 'Trebuchet MS', Roboto, Ubuntu, sans-serif !important;
+  color: #B2B5BE !important;
+}
+
+.tradingview-widget-copyright .blue-text {
+  color: #2962FF !important;
+}
+
+.tradingview-widget-copyright a {
+  text-decoration: none !important;
+  color: #B2B5BE !important;
+}
+
+.tradingview-widget-copyright a:visited {
+  color: #B2B5BE !important;
+}
+
+.tradingview-widget-copyright a:hover .blue-text {
+  color: #1E53E5 !important;
+}
+
+.tradingview-widget-copyright a:active .blue-text {
+  color: #1848CC !important;
+}
+
+.tradingview-widget-copyright a:visited .blue-text {
+  color: #2962FF !important;
+}
+
+/* trading view ends */
+
 .responsive-heading {
   font-size: clamp(2rem, 5vw, 4rem);
   font-weight: 800;
   line-height: 1.2;
-  background: linear-gradient(45deg, #45ACAB, #FFF);
+  background: linear-gradient(45deg, #ffffff, #FFF);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
