@@ -1226,13 +1226,13 @@ p {
 /* frontpage button starts */
 .ocean-btn {
   position: relative;
-  padding: 20px 50px;
+  padding: 20px 40px;
   font-size: 22px;
   font-weight: bold;
   color: rgb(255, 255, 255);
   background: linear-gradient(to bottom, #06e5bc 0%, #0d0149 100%);
   border: none;
-  border-radius: 12px;
+  border-radius: 120px;
   box-shadow: 0 8px 25px rgba(3, 44, 68, 0.6);
   cursor: pointer;
   overflow: hidden;
@@ -1329,7 +1329,7 @@ p {
 
 .box {
   background: black;
-  border-radius: 16px;
+  border-radius: 75px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
   overflow: hidden;
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
