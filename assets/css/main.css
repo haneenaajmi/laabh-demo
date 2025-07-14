@@ -135,6 +135,24 @@ body {
   padding: 20px;
 }
 
+/* bg animation */
+
+.video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  object-fit: cover;
+  background-color: #000;
+  pointer-events: none;
+}
+
+/* bg animation  */
+
+
+
 /* sub headings starts */
 .heading-container {
   width: 100%;
@@ -144,8 +162,8 @@ body {
   justify-content: center;
   margin: 0 auto;
   padding: 2rem;
-  border-radius: 1rem;
-  box-shadow: 0 4px 6px -1px rgba(78, 78, 78, 0.1), 0 2px 4px -1px rgba(177, 177, 177, 0.06);
+  /* border-radius: 1rem; */
+  /* box-shadow: 0 4px 6px -1px rgba(78, 78, 78, 0.1), 0 2px 4px -1px rgba(177, 177, 177, 0.06); */
 }
 
 /* tradeview chart starts */
@@ -189,7 +207,7 @@ body {
   font-size: clamp(2rem, 5vw, 4rem);
   font-weight: 800;
   line-height: 1.2;
-  background: linear-gradient(45deg, #ffffff, #FFF);
+  background: linear-gradient(35deg, #22c1b4, #6482d3);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -692,6 +710,112 @@ p {
 
 
 /* whats next for laabh starts here */
+
+/* frst animation container starts */
+.container1 {
+  max-width: 1200px;
+  margin: 0px auto;
+  padding: 0 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+
+/* Animation Container Styles */
+.animation-container1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80vh;
+}
+
+.image-container1 {
+  width: 50%;
+  padding: 20px;
+  opacity: 0;
+  transform: translateX(-50px);
+  will-change: transform, opacity;
+  transition: opacity 0.5s cubic-bezier(.17, .67, .71, 1.27),
+    transform 0.5s cubic-bezier(.17, .67, .71, 1.27);
+}
+
+.text-container1 {
+  width: 45%;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transform: translateX(50px);
+  will-change: transform, opacity;
+  transition: opacity 0.5s cubic-bezier(.17, .67, .71, 1.27) 0.1s,
+    transform 0.5s cubic-bezier(.17, .67, .71, 1.27) 0.1s;
+}
+
+.text-container1 p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.image-container1 img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  object-fit: cover;
+}
+
+/* Animation Trigger Classes */
+.animate-in {
+  opacity: 1 !important;
+  transform: translateX(0) !important;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .animation-container1 {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .image-container1,
+  .text-container1 {
+    width: 100%;
+  }
+
+  .image-container1 {
+    order: 1;
+    margin-bottom: 10px;
+  }
+
+  .text-container1 {
+    order: 2;
+  }
+}
+
+/* Decorative Elements */
+.decoration {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: linear-gradient(45deg, rgba(100, 149, 237, 0.1), rgba(148, 0, 211, 0.1));
+  z-index: -1;
+}
+
+.decoration-1 {
+  top: 10%;
+  left: 5%;
+}
+
+.decoration-2 {
+  bottom: 15%;
+  right: 5%;
+  width: 300px;
+  height: 300px;
+}
+
+/* first animation container ends */
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -1659,9 +1783,9 @@ p {
 
 
 .text-spacing {
-  letter-spacing: 2px;
+  letter-spacing: 3px;
   /* Adjust letter spacing */
-  line-height: 2.0;
+  line-height: 3.0;
   /* Adjust line spacing */
 }
 
@@ -1669,7 +1793,7 @@ p {
 .unique-section {
   width: 100%;
   padding: 80px 0;
-  background-color: #03050e;
+  background-color: #000;
   justify-content: center;
   display: flex;
   flex-direction: column;
@@ -5459,12 +5583,13 @@ h6 {
 /* main navbar in website */
 .blockchain-header {
   /* background-color: #ffffff; */
-  background: linear-gradient(20deg, #45ACAB, #0e0430);
+  /* background: linear-gradient(20deg, #45ACAB, #0e0430); */
   box-shadow: 0px 8px 77px 0px rgba(37, 37, 37, 0.71);
 }
 
 .blockchain-header .stricked-menu {
-  background: linear-gradient(20deg, #45ACAB, #0e0430);
+  background: #000;
+  /* background: linear-gradient(20deg, #45ACAB, #0e0430); */
   /* background-color: #ffffff; */
 }
 
