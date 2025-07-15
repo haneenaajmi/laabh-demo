@@ -1568,7 +1568,7 @@ p {
 /* who we are */
 .aboutus {
   /* background-image: url('assets/img/bg/advantages_bg.png'); */
-  background-color: white;
+  background-color: #000;
   background-size: cover;
   background-position: center;
   height: 400px;
