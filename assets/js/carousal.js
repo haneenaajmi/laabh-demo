@@ -2,10 +2,10 @@ const swiper = new Swiper('.slider-wrapper', {
 
     loop: true,
     grabCursor: true,
-    spacebetween: 30,
+    spaceBetween: 60,
 
     autoplay: {
-        delay: 2800,
+        delay: 2500,
         disableOnInteraction: false,
     },
 
@@ -25,13 +25,13 @@ const swiper = new Swiper('.slider-wrapper', {
     // responsive break points
     breakpoints: {
         0: {
-            slidesPreView: 1
+            slidesPerView: 1
         },
         768: {
-            slidesPreView: 2
+            slidesPerView: 2
         },
         1024: {
-            slidesPreView: 3
+            slidesPerView: .4
         }
     }
 
