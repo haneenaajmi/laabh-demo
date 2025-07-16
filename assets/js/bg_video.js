@@ -4,5 +4,5 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Try to play video (required for some mobile browsers)
     // Force autoplay (but don't show controls on failure)
-    video.play().catch(() => { });
+    // video.play().catch(() => { });
 });
