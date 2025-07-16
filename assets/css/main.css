@@ -1581,6 +1581,14 @@ p {
 }
 
 
+.gradient-bg {
+  /* background-image: url('assets/img/bg/advantages_bg.png'); */
+  background: linear-gradient(to bottom, #040833, #000000);
+  /* Top to bottom gradient */
+
+
+}
+
 .container-wrapper {
   display: flex;
   max-width: 1200px;
