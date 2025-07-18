@@ -210,8 +210,9 @@ body {
   font-size: clamp(2rem, 5vw, 4rem);
   font-weight: 800;
   line-height: 1.2;
-  background: linear-gradient(35deg, #22c1b4, #6482d3);
+  background: linear-gradient(55deg, #22c1b4, #2848a2);
   -webkit-background-clip: text;
+  cursor: pointer;
   background-clip: text;
   color: transparent;
   margin-bottom: 0.4rem;
@@ -869,7 +870,7 @@ p {
 
 .gallery-content h2 {
   font-size: 1.3rem;
-  color: #75E8D9;
+  color: #56F0F8;
   margin-bottom: 10px;
 }
 
