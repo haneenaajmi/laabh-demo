@@ -11687,6 +11687,9 @@ blockquote span {
 /*----------------------------------------*/
 /*  22. preloader
 /*----------------------------------------*/
+
+
+/* preloader starts */
 #xb-loadding {
   height: 100%;
   position: fixed;
@@ -11719,31 +11722,31 @@ blockquote span {
 }
 
 #xb-loadding.xb-loader.style-2 .honeycomb div {
-  background: #15B785;
+  background: #4545a5;
 }
 
 #xb-loadding.xb-loader.style-2 .honeycomb div::before {
-  border-top-color: #15B785;
+  border-top-color: #4545a5;
 }
 
 #xb-loadding.xb-loader.style-2 .honeycomb div::after {
-  border-bottom-color: #15B785;
+  border-bottom-color: #4545a5;
 }
 
 #xb-loadding.xb-loader.style-3 {
-  background-color: #0B1121;
+  background-color: #4545a5;
 }
 
 #xb-loadding.xb-loader.style-3 .honeycomb div {
-  background: #45ACAB;
+  background: #4545a5;
 }
 
 #xb-loadding.xb-loader.style-3 .honeycomb div::before {
-  border-top-color: #45ACAB;
+  border-top-color: #4545a5;
 }
 
 #xb-loadding.xb-loader.style-3 .honeycomb div::after {
-  border-bottom-color: #45ACAB;
+  border-bottom-color: #4545a5;
 }
 
 @-webkit-keyframes honeycomb {
